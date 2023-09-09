@@ -17,14 +17,24 @@
     appId: "1:1048494592514:web:a5c8221754bb778d57cd1b",
     measurementId: "G-JXL2C4095Y"
   };
-  document.getElementById("btn").addEventListener(async()=>{
+  document.getElementById("btn").addEventListener("click",async()=>{
 let name =document.getElementById("name").value
 let email =document.getElementById("email").value
       try {
-          const docRef = await addDoc(collection(db, "users"), {
-           
+          const docRef = await addDoc(collection(db, "Faiz-Portfolio"), {
+           name:name,
+           Email:email
             });
-            console.log("Document written with ID: ", docRef.id);
+            Swal.fire({
+                title: 'Thanks For Contacting❤',
+                showClass: {
+                  popup: 'animate__animated animate__fadeInDown'
+                },
+                hideClass: {
+                  popup: 'animate__animated animate__fadeOutUp'
+                }
+              })
+            // console.log("Document written with ID: ", docRef.id);
         } catch (e) {
             console.error("Error adding document: ", e);
         }
