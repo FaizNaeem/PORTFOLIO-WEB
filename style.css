@@ -15,6 +15,12 @@ html{
     border-radius: 50%;
     /* margin-bottom: 20px; */
 }
+.form-control:focus{
+    border:1px solid #ced4da !important;
+    background: transparent;
+    box-shadow: #ced4da 0px 0px 0px !important;
+      }
+
 
 .a {
     /* border: 1px solid black; */
