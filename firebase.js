@@ -20,28 +20,39 @@
   document.getElementById("btn").addEventListener("click",async()=>{
 let name =document.getElementById("name").value
 let email =document.getElementById("email").value
-      try {
-          const docRef = await addDoc(collection(db, "Faiz-Portfolio"), {
-           name:name,
-           Email:email
-            });
-            Swal.fire({
-                title: 'Thanks For Contacting❤',
-                showClass: {
-                  popup: 'animate__animated animate__fadeInDown'
-                },
+if(name==""|| email==""){
+  Swal.fire({
+    icon: 'error',
+    title: 'Please Fill This Form',
+    // text: 'Please Fill This Form',
+   
+  })
+}
+else{
+
+  try {
+    const docRef = await addDoc(collection(db, "Faiz-Portfolio"), {
+      name:name,
+      Email:email
+    });
+    Swal.fire({
+      title: 'Thanks For Contacting❤',
+      showClass: {
+        popup: 'animate__animated animate__fadeInDown'
+      },
                 hideClass: {
                   popup: 'animate__animated animate__fadeOutUp'
                 }
               })
-            // console.log("Document written with ID: ", docRef.id);
-        } catch (e) {
-            console.error("Error adding document: ", e);
-        }
-    })
-
-
-  // Initialize Firebase
+              // console.log("Document written with ID: ", docRef.id);
+            } catch (e) {
+              console.error("Error adding document: ", e);
+            }
+          }
+          })
+          
+          
+          // Initialize Firebase
   const app = initializeApp(firebaseConfig);
   const analytics = getAnalytics(app);
   const db = getFirestore(app);
