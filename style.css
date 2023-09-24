@@ -86,7 +86,10 @@ a {
 .btn-about {
 
     border-radius: 50px;
-    transition: all .4s ease-in-out;
+    /* transition: all .4s ease-in-out; */
+    background: linear-gradient(to right, transparent 50%, rgb(254, 14, 54) 50%) left;
+background-size: 200%;
+transition: .5s ease-out;
     padding: 10px 27px;
     border: 2px solid grey;
     margin: 30px;
@@ -97,11 +100,12 @@ a {
     text-transform: uppercase;
     letter-spacing: 2px;
     text-decoration: none;
-    background: transparent;
+    /* background: transparent; */
 }
 
 .btn-about:hover {
-    background-color: rgb(254, 14, 54);
+    /* background-color: rgb(254, 14, 54); */
+    background-position: right;
     border-color: rgb(255, 16, 56);
     color: white;
 }
@@ -142,7 +146,8 @@ width: 100%; */
 
 .hire {
     border-radius: 50px;
-    transition: all .4s ease-in-out;
+    transition: all .5s ease-in-out;
+    /* background: linear-gradient(to right, transparent 50%,rgb(12, 9, 9)  50%) left; */
     padding: 10px 27px;
     border: 2px solid white;
     margin: 30px;
@@ -156,7 +161,8 @@ width: 100%; */
 
 .hire:hover {
     background-color: rgb(255, 73, 103);
-    border-color: white;
+/* background-position: right; */
+    /* border-color: white; */
     color: white;
 
 }
@@ -218,13 +224,13 @@ width: 100%; */
 @media only screen and (max-width:991px) {
     .navbar-nav {
         padding-left: 400px;
-        background-color: rgb(0, 0, 0);
+        background-color: black;
         /* color: white; */
         width: 100%;
-        box-shadow: 2px 2px 12px white;
+        box-shadow: 2px 2px 8px white;
         /* margin-left: 200px; */
         height: 300px;
-        border-radius: 20px;
+        border-radius: 10px;
     }
     .a{
         color: white;
@@ -234,8 +240,8 @@ width: 100%; */
 @media only screen and (max-width:800px) {
     .navbar-nav {
         padding-left: 350px;
-        background-color: rgb(0, 0, 0);
-        box-shadow: 2px 2px 12px white;
+        background-color: transparent;
+        /* box-shadow: 2px 2px 12px white; */
         width: 100%;
         
         /* color: white; */
@@ -248,7 +254,9 @@ width: 100%; */
 @media only screen and (max-width:600px) {
     .navbar-nav {
         padding-left: 150px;
-        background-color: rgb(0, 0, 0);
+        background-color:transparent;
+        margin-top: 30px;
+
         
       
     }
@@ -443,18 +451,27 @@ flex-direction: column;
     border-radius: 30px;
     color: white;
     text-align: center;
-  
+    background: linear-gradient(to right, transparent 50%,rgba(130, 76, 52, 0.508)   50%) left;
+    background-size: 200%;
+    transition: .5s ease-out;
     cursor: pointer;
-    background-size: 100%,150%;
-    transition: all .8s ;
+    /* background-size: 100%,150%; */
+    /* transition: all .8s ; */
     
 }
 .content:hover{
-    background-position: left bottom;
+    /* background-position: left bottom; */
     color: white;
+    border-color: 1px solid white;
+    text-align: center !important;
+    border: 1px solid gray;
+    margin: 10px;
+
     border: none;
-    background: linear-gradient(to right,black, white) ;
-    box-shadow: 0 0 20px white;
+    
+background-position:  right;
+    /* background: linear-gradient(to right,black, white) ; */
+    /* box-shadow: 0 0 20px white; */
 }
 
 .service-container {
@@ -500,15 +517,21 @@ flex-direction: column;
     margin-top: 20px;
     width: 300px;
 border-radius: 20px;
-background-color: transparent;
-transition: all .4s ease-in-out;
+/* background-color: transparent; */
+background: linear-gradient(to right, transparent 50%,rgb(12, 9, 9)  50%) left;
+background-size: 200%;
+transition: .5s ease-out;
+/* transition: all .4s ease-in-out; */
 color: white;
 }
 .btn-form:hover{
-    background: linear-gradient(to right,white, black) ;
-    box-shadow: 0 0 20px white;
-    color: black;
+    /* background: linear-gradient(to right,white, black) ; */
+    /* box-shadow: 0 0 20px white; */
+    /* color: black; */
+ 
+    background-position: right;
 }
+
 .form::placeholder{
     color: white;
 }
