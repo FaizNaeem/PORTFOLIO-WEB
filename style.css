@@ -462,12 +462,73 @@ flex-direction: column;
 .content:hover{
     /* background-position: left bottom; */
     color: white;
-    border-color: 1px solid white;
+    /* border-color: 1px solid white; */
     text-align: center !important;
-    border: 1px solid gray;
+    border: 1px solid gray !important;
     margin: 10px;
 
-    border: none;
+    /* border: none; */
+    
+background-position:  right;
+    /* background: linear-gradient(to right,black, white) ; */
+    /* box-shadow: 0 0 20px white; */
+}
+.content1{
+    width:300px;
+    border: 1px solid gray;
+    margin: 10px;
+    height: 425px;
+    border-radius: 30px;
+    color: white;
+    text-align: center;
+    background: linear-gradient(to right, transparent 50%,blue   50%) left;
+    background-size: 200%;
+    transition: .5s ease-out;
+    cursor: pointer;
+    /* background-size: 100%,150%; */
+    /* transition: all .8s ; */
+    
+}
+.content1:hover{
+    /* background-position: left bottom; */
+    color: white;
+    /* border-color: 1px solid white; */
+    text-align: center !important;
+    border: 1px solid gray !important;
+    margin: 10px;
+
+    /* border: none; */
+    
+background-position:  top;
+    /* background: linear-gradient(to right,black, white) ; */
+    /* box-shadow: 0 0 20px white; */
+}
+.content2{
+    width:300px;
+    border: 1px solid gray;
+    margin: 10px;
+    height: 425px;
+    border-radius: 30px;
+    color: white; 
+    text-align: center;
+    background: linear-gradient(to right, transparent 50%,rgb(255, 16, 56)  50%) left;
+
+    background-size: 200%;
+    transition: .5s ease-out;
+    cursor: pointer;
+    /* background-size: 100%,150%; */
+    /* transition: all .8s ; */
+    
+}
+.content2:hover{
+    /* background-position: left bottom; */
+    color: white;
+    /* border-color: 1px solid white; */
+    text-align: center !important;
+    border: 1px solid white !important;
+    margin: 10px;
+
+    /* border: none; */
     
 background-position:  right;
     /* background: linear-gradient(to right,black, white) ; */
